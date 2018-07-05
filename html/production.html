@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作品</title>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/production.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_643483_9o2vh9v5wcplow29.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<a href="../index.html" id="logo">
+        <div>D</div>
+        <div>D</div>
+    </a>
+	<header>
+        <p>LOVE DESIGN</p>
+        <span>ToughtSpot AI-Driven平台允许
+            任何人都可以轻易地从他们那里获得洞察力。
+            公司数据在几秒钟内。只是
+            一次点击就可以进行搜索和分析
+            数据，并获得自动化的洞察力。</span>
+        <span>这个应用程序立即为用户提供
+
+一个驱动在一次点击的帮助下
+
+地理定位。对于这个项目，我们的目标是
+
+鼓励真正的一键转换
+
+在保持连续性的同时
+
+应用现有的设计。</span>
+        <button>购买服务</button>
+        <div class="mask"></div>
+        <a href="javascript:;"><img src="../img/arrowDown.png" alt=""></a>
+	</header>
+	<ul class="u_title">
+		<li>我们不只是做产品</li>
+		<li>我们更关心客户</li>
+		<li><span>在这里，我们的工作完成时，不仅仅是想象和创造美丽的数字设计概念。
+			我们的工作就是将你的产品直观的呈现。让你的产品完美的升级。让你的产品和业务联系在一起。
+			我们的使命就是做到这一点，发生无限可能。</span>
+        </li>
+		<li>
+			<a href="#" class="focus">学习</a>
+			<a href="#" class="focus f_2">关注</a>
+			<a href="#" class="focus">创造</a>
+		</li>
+	</ul>
+	<ul class="u_first">
+		<li class="bgImg">
+			<a href="javascript:;" class="c_left">
+                <span>念</span>
+				<span class="circle_s"></span>
+                <span>想</span>
+			</a>
+            <ul>
+                <li>创新设计</li>
+                <li>我们很高兴地宣布，今年夏天将有我们的第二批作品将进入市场。
+                    这些最初的合作伙伴们优雅地庆祝着这个丰富的多样的城市，
+                    也预示着我们将为这个充满活力的市场带来的一波热度</li>
+            </ul>
+		</li>
+	</ul>
+	<ul class="u_content">
+		<li class="cont">
+			<div class="desc">
+				<span>品质</span>
+				<span>如果你很挑剔，那么你就可以用它来创造一个能让人惊叹的产品。在质量和设计交付速度之间找到平衡是一个棘手的问题。但我们知道如何处理。</span>
+			</div>
+			<div class="pic"><img src="../img/cont-(1).jpg" alt=""></div>
+		</li>
+		<li class="cont">
+			<div class="pic"><img src="../img/cont-(4).jpg" alt=""></div>
+			<div class="desc d-1">
+				<span>视觉</span>
+				<span>我们相信直觉和简单应该不惜一切代价来实现。一个成熟的视觉设计和用户体验的共生关系保证了一个一流的产品。尽管系统设计确保了它的质量，无论它有多复杂。</span>
+			</div>
+		</li>
+		<li class="cont">
+			<div class="desc">
+				<span>工作流程</span>
+				<span>无论我们在做什么，无论是情绪板、模型还是视觉设计，让我们的客户都了解信息是必须的。我们制定一个行动计划，并一直坚持下去。使设计过程尽可能的清晰。</span>
+			</div>
+			<div class="pic"><img src="../img/cont-(8).jpg" alt=""></div>
+		</li>
+		<li class="cont">
+			<div class="pic"><img src="../img/cont-(7).jpg" alt=""></div>
+			<div class="desc d-1">
+				<span>扩展</span>
+				<span>每个产品都需要单独的方法。与小公司和大公司合作，我们为他们的产品的成功而奋斗。与客户保持联系有助于我们达到目标并实现想法。</span>
+			</div>
+		</li>
+	</ul>
+	<footer>
+		<div>触手可及的设计</div>
+		<div class="big-info">
+			<a href="account.html" class="slogen">加入我们，就此开始</a>
+			<a href="account.html" class="creatAcc">创建账户</a>
+		</div>
+		<div>
+			<a href="">CONTACT US</a>
+			<a href="">
+				<i class="iconfont icon-weibo"></i>
+				<i class="iconfont icon-twitter"></i>
+				<i class="iconfont icon-github4"></i>
+				<i class="iconfont icon-socialbehance"></i>
+				<i class="iconfont icon-iconset0360"></i>
+			</a>
+		</div>
+	</footer>
+    <script>
+            $('header>a>img').delay(600).animate({'top':'0.6rem'},300,callSelf);
+            function callSelf(){
+                $(this).queue(function(){
+                    $(this).css({'top':'-0.24rem'});
+                    $(this).dequeue();
+                });
+                $(this).animate({'top':'0.18rem'},300);
+                $(this).delay(600).animate({'top':'0.6rem'},300,callSelf);
+            }
+
+    </script>
+</body>
+</html>

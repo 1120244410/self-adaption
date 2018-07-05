@@ -1,0 +1,215 @@
+*{
+    list-style: none;
+    border: none;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0);
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 100px;
+}
+#logo{
+    display: flex;
+    font-size: 0.3rem;
+    font-family: '方正兰亭超细黑简体';
+    color: #333;
+    padding:0.48rem;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 3;
+}
+#logo>div:first-child{
+    position: relative;
+    top:0.07rem;
+}
+#logo>div:last-child{
+    font-size: 0.44rem;
+    position: relative;
+    left:-0.2rem;
+}
+/*logo end*/
+
+.content{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:1rem 0.75rem;
+}
+.content .title{
+    width:5.5rem;
+    margin:1rem auto 0.4rem auto;
+    font-size: 0.5rem;
+    color:#555;
+    font-weight: bold;
+}
+.content .describe{
+    width:5.5rem;
+    margin:0.4rem auto;
+    font-size: 0.14rem;
+    color:#555;
+    font-weight: bold;
+}
+.content .form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+}
+.content .form input{
+    width:5.5rem;
+    height:0.56rem;
+    margin:0.2rem 0;
+    border-bottom: 0.01rem solid #ddd;
+    outline: none;
+}
+.content .form button{
+    width:1.44rem;
+    height:0.36rem;
+    background: #eee;
+    margin-bottom: 1.2rem;
+    outline: none;
+    transition: all 0.3s;
+}
+.content .form button:hover{
+    background: #ddd;
+    transition: all 0.3s;
+}
+.content .form textarea{
+    width:5.5rem;
+    height:2rem;
+    margin:0.4rem 0;
+    border-bottom: 0.01rem solid #ddd;
+    outline: none;
+    resize: none;
+    font: 400 0.13rem Arial;
+    color:#555;
+}
+/*form end*/
+
+.rightNvg{
+    width:1.4rem;
+    height:100%;
+    position: fixed;
+    top:0;
+    right:0;
+    border-left: 0.01rem solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding-top:1rem;
+    z-index: 2;
+}
+.rightNvg li{
+    width:2.01rem;
+    height:0.2rem;
+    padding:0 0.2rem;
+    margin-bottom: 0.6rem;
+    position: relative;
+    display: flex;
+}
+.rightNvg li .iconfont{
+    font-size: 0.28rem;
+    margin-right: 0.2rem;
+}
+.rightNvg li:before{
+    content: '';
+    display: block;
+    width:0;
+    height:0;
+    background: black;
+    position: absolute;
+    left:-0.02rem;
+    top:0;
+    transition:all 0.2s;
+}
+.rightNvg li:hover:before{
+    width:0.04rem;
+    height:0.3rem;
+    transition:all 0.2s;
+}
+.rightNvg li a{
+    display: block;
+    font-size: 0.18rem;
+    color:#666;
+}
+.rightNvg li:hover a{
+    color:#000;
+}
+/*rightNvg end*/
+
+footer{
+    width:100%;
+    height:3rem;
+    background-color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    padding:0.46rem 0.75rem;
+    transition: 1s;
+    position: relative;
+    z-index: 3;
+}
+footer>div:nth-child(1){
+    width:100%;
+    font-size: 0.18rem;
+    color:rgba(255,255,255,0.4);
+}
+footer>.big-info{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer>.big-info .slogen{
+    color:white;
+    font-size: 0.36rem;
+    letter-spacing: 0.053rem;
+    border-bottom: 0.01rem solid rgba(255,255,255,0);
+    transition: 0.3s;
+}
+footer>.big-info .slogen:hover{
+    border-bottom: 0.01rem solid rgba(255,255,255,1);
+    transition: 0.3s;
+}
+footer>.big-info .creatAcc{
+    display: block;
+    height:0.46rem;
+    padding: 0 0.4rem;
+    font-size: 0.14rem;
+    color:white;
+    border:0.01rem solid white;
+    transition: 0.3s;
+    line-height: 0.46rem;
+}
+footer>.big-info .creatAcc:hover{
+    background: white;
+    color:black;
+    transition: 0.3s;
+}
+footer>div:nth-child(3){
+    width:100%;
+    color:rgba(255,255,255,0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+footer>div:nth-child(3)>a{
+    font-size: 0.2rem;
+    color:rgba(255,255,255,0.4);
+    margin-bottom: 0.2rem;
+}
+footer>div:nth-child(3)>a>i{
+    font-size: 0.28rem;
+    color:rgba(255,255,255,0.4);
+    margin-left: 0.2rem;
+    position: relative;
+}
+footer>div:nth-child(3)>a>i:hover{
+    color:white;
+}
