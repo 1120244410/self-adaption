@@ -102,6 +102,19 @@ body{
     height:auto;
     column-count: 3;
 }
+@media screen and (max-width: 1200px){
+    .allImg li{
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 768px){
+    .allImg li{
+        column-count: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .allImg li img{
     width:3rem;
     height:100%;
