@@ -102,6 +102,13 @@ body{
     height:auto;
     column-count: 3;
 }
+.allImg li img{
+    width:3rem;
+    height:100%;
+    margin-bottom: 0.4rem;
+    break-inside:avoid;
+    display: block;
+}
 @media screen and (max-width: 1200px){
     .allImg li{
         column-count: 2;
@@ -114,12 +121,9 @@ body{
         flex-direction: column;
         align-items: center;
     }
-}
-.allImg li img{
-    width:3rem;
-    height:100%;
-    margin-bottom: 0.4rem;
-    break-inside:avoid;
+    .allImg li img{
+        width:80%;
+    }
 }
 
 
